@@ -1,0 +1,23 @@
+{
+  "name": "gomaun-web",
+  "version": "1.0.0",
+  "description": "web project of gomaun company",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gomaun/gomaun-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gomaun/gomaun-web/issues"
+  },
+  "homepage": "https://github.com/gomaun/gomaun-web#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
