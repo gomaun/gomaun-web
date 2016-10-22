@@ -1,13 +1,16 @@
 var express = require('express');
 var app = express();
 
-app.set("port", process.env.PORT || 3030);
+var teaserRouter = require("./routes/teaser")(app);
 
-app.get("/", function(req, res){
-    res.type("text/plain");
-    res.send("express server started!");
-    res.end();
-});
+var pug = require('pug');
+var path = require('path');
+
+
+app.set("view engine", 'pug');
+app.set("views", path.join(__dirname + "/views"));
+
+app.set("port", process.env.PORT || 3030);
 
 app.listen(app.get("port"), function(){
     console.log("gomaun express server is running at localhost:" + app.get("port"));
