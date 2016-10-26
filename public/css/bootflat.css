@@ -26,7 +26,7 @@ body {
 }
 
 a {
-  color: #3bafda;
+  color: #434a54;
   text-decoration: none;
 }
 a:hover, a:focus {
@@ -49,7 +49,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: inherit;
+  font-family: 'NanumSquare', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
   line-height: 1.1;
   color: inherit;
@@ -1800,6 +1800,76 @@ blockquote {
     color: #666;
   }
 }
+/**
+navbar-custom
+*/
+.navbar-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: none;
+    border-radius: 0;
+    background-color: rgba(255, 253, 154, .9);
+    width: 100%;
+    z-index: 2000;
+    margin-bottom: 0 !important;
+}
+.navbar-custom .nav li a {
+    display: block;
+    color: #434a54;
+}
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:hover {
+    color: #434a54;
+}
+.navbar-custom .nav li a:active,
+.navbar-custom .nav li a.current {
+    border-bottom: 3px solid #434a54;
+}
+.navbar-custom .navbar-toggle {
+    position: relative;
+    background-color: #434a54;
+    border-color: #434a54;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+    background-color: #434a54;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+    background-color: rgba(255, 255, 255, .9);
+}
+.navbar-custom .navbar-brand {
+    padding: 5px 15px;
+    opacity: .7;
+    filter:alpha(opacity=70);
+    transition: opacity .4s ease-in-out;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:active {
+    opacity: 1;
+    filter:alpha(opacity=100);
+}
+.navbar-default .navbar-collapse {
+    border-color: #e7e7e7;
+}
+@media (max-width: 992px) {
+  .navbar-custom .navbar-brand {
+    width: 200px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-custom {
+    position: relative;
+    top: 0;
+  }
+  .navbar-custom .navbar-nav > li > a:hover,
+  .navbar-custom .navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: #434a54;
+  }
+}
+
 
 /**
  * list
@@ -2315,7 +2385,7 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
 }
 .footer-logo, .footer-nav {
   float: left;
-  width: 20%;
+  width: 25%;
   padding: 0 20px;
 }
 @media (max-width: 768px) {
@@ -2522,7 +2592,7 @@ a.list-group-item-danger.active, a.list-group-item-danger:hover, a.list-group-it
  * --------------------------------------------------
  */
 .dropdown-menu {
-  background-color: #434a54;
+  background-color: #d0d2d4;
   border: none;
 }
 .dropdown-menu .dropdown-header {

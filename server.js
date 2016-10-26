@@ -1,11 +1,13 @@
 var express = require('express');
 var app = express();
+
 //routers
 var teaserRouter = require("./routes/teaser")(app);
 
 //packages
 var pug = require('pug');
 var path = require('path');
+
 
 //set view engine to 'pug'
 app.set("view engine", 'pug');
