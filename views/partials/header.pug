@@ -1,0 +1,39 @@
+header
+	nav.navbar.navbar-default.navbar-custom(role='navigation')
+		.container
+			.navbar-header
+				button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand(href='/')
+					img(src='/public/img/footer-logo.png', height='40')
+			.collapse.navbar-collapse
+				ul.nav.navbar-nav.navbar-right
+					li.collapse.navbar-collapse
+						a.nav-link(href='#about') About
+					li.collapse.navbar-collapse
+						a.nav-link(href='#services') Services
+					li.collapse.navbar-collapse
+						a.nav-link(href='#works') Works
+					li.collapse.navbar-collapse
+						a.nav-link(href='#news') News
+					li.dropdown.collapse.navbar-collapse
+						a.dropdown-toggle(href='#', data-toggle='dropdown')
+							| Contact 
+							b.caret
+						ul.dropdown-menu(role='menu')
+							li.dropdown-header Contact us via
+							li
+								a(href='//facebook.com/')
+									i.fa.fa-facebook-official(aria-hidden='true')
+									| 		facebook
+							li
+								a(href='//instagram.com/')
+									i.fa.fa-instagram(aria-hidden='true')
+									| 		instagram
+							li
+								a(href='mailto:gomaunkr@gmail.com')
+									i.fa.fa-envelope(aria-hidden='true')
+									| 		e-mail
