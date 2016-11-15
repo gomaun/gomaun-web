@@ -3,50 +3,92 @@ extends ./layout
 block content
 	.jumbotron.text-center.bgBlur
 		.jumbotron-photo.jumbotron-hero
-			h1(style="font-size: 56px; font-weight:600; color: #ffffff; margin-top: 10%;") 고마운컴퍼니 
-			p(style="font-size: 28px; font-weight:600; color: #ffffff;") 고마운기업과 함께합니다.
-			a(href='#about').ghost-button 자세히 보기 
+			.jumbotron-center
+				h1.margin-bottom(style="font-size: 50px; font-weight:600; color: #ffffff; ") "We go together to make the world better!"
+				a.text-center.ghost-button(href='#about', style='font-size: 20px; margin-top:20px;') 자세히 보기 
 
 	section#about
 		.container.margin-bottom-large
 			.row
 				h1.text-center.margin-top-large About
 				p.text-center 고마운컴퍼니를 소개합니다.
-				.col-md-4.col-md-offset-2
+				
+				.col-md-4.col-md-push-6
 					.jumbotron
 						.jumbotron-photo
 							img(src='/public/img/logo_box.png')
-				.col-md-4
-					#accordion1.panel-group
-						.panel
-							.panel-heading
-								h2(style="font-size: 22px;").panel-title
-									a(data-toggle='collapse', data-parent='#accordion1', href='#collapseOne') 
-										i.fa.fa-sort-desc
-										| 	고마운컴퍼니?
-							#collapseOne.panel-collapse.collapse.in
-								.panel-body
-									blockquote
-										p 고마운 기업들의 숨어있는 가치를 이끌어내는 코디네이터
-									p 고마운컴퍼니는 고마운기업(소셜벤처, (예비, 인증)사회적기업)들을 위한 소셜벤처입니다.
-						.panel
-							.panel-heading
-								h2(style="font-size: 22px;").panel-title
-									a(data-toggle='collapse', data-parent='#accordion1', href='#collapseTwo') 
-										i.fa.fa-sort-desc
-										|	고마운컴퍼니가 하는 일
-							#collapseTwo.panel-collapse.collapse
-								.panel-body
-									| 고마운 컴퍼니는 고마운기업들과 함께 고마운사람들과 고마운가게 서비스를 운영하면서 그동안 주목받지 못한 보석같은 고마운기업들과 함께 성장하는 것을 목표로 하고 있습니다.
-						.panel
-							.panel-heading
-								h2(style="font-size: 22px;").panel-title
-									a(data-toggle='collapse', data-parent='#accordion1', href='#collapseThree')
-										i.fa.fa-sort-desc
-										|	고마운컴퍼니의 비전
-							#collapseThree.panel-collapse.collapse
-								.panel-body
-									| 고마운기업이 고마운컴퍼니를 통해 소비자에게 잘 전달될 수 있도록 노력하며, 고마운컴퍼니는 고마운기업이 즐거운 기업활동을 할 수 있도록 함과 동시에 소비자에게 더욱 좋은 제품을 소개하고 판매할 수 있도록 도울 것입니다.
+
+				.col-md-6.col-md-pull-4.text-right
+					h3 Who We are
+					blockquote.blockquote-reverse 고마운기업들의 숨어있는 가치를 이끌어내는 코디네이터
+					p 고마운컴퍼니는 고마운기업(소셜벤처, 예비 및 인증 사회적기업)들을 위해 일하는 소셜벤처입니다.
+
+					h3 Why We're Here
+					blockquote.blockquote-reverse we believe in GOMAUN people, company, society are everywhere.
+					p 우리는 고마운 사람들, 기업, 사회가 어디에나 있다고 믿습니다.
+
+			.row
+				.col-md-4.col-md-offset-2
+					.jumbotron
+						.jumbotron-photo
+							img(src='/public/img/logo_thumbsup.png')
+				.col-md-6
+					h3 What We Do
+					blockquote We discover & contribute to GOMAUN people
+					p 고마운사람들과 고마운가게를 통해 고마운기업이 더 성장하도록 돕습니다.
+
+					h3 What We Value
+					blockquote Honesty, Respect, Passion
+					p 고마운컴퍼니는 정직과 존중, 열정을 가장 중요하게 여깁니다.
+				
+			//
+				.row
+					.col-md-4.col-md-offset-2
+						.jumbotron
+							.jumbotron-photo
+								img(src='/public/img/logo_box.png')
+					.col-md-4
+						#accordion1.panel-group
+							.panel
+								.panel-heading
+									h2(style="font-size: 22px;").panel-title
+										a(data-toggle='collapse', data-parent='#accordion1', href='#collapseOne') 
+											i.fa.fa-sort-desc
+											| 	고마운컴퍼니?
+								#collapseOne.panel-collapse.collapse.in
+									.panel-body
+										blockquote
+											p 고마운 기업들의 숨어있는 가치를 이끌어내는 코디네이터
+										p 고마운컴퍼니는 고마운기업(소셜벤처, (예비, 인증)사회적기업)들을 위한 소셜벤처입니다.
+							.panel
+								.panel-heading
+									h2(style="font-size: 22px;").panel-title
+										a(data-toggle='collapse', data-parent='#accordion1', href='#collapseTwo') 
+											i.fa.fa-sort-desc
+											|	고마운컴퍼니가 하는 일
+								#collapseTwo.panel-collapse.collapse
+									.panel-body
+										| 고마운 컴퍼니는 고마운기업들과 함께 고마운사람들과 고마운가게 서비스를 운영하면서 그동안 주목받지 못한 고마운 기업들과 함께 선순환 구조 창출에 기여합니다.
+							.panel
+								.panel-heading
+									h2(style="font-size: 22px;").panel-title
+										a(data-toggle='collapse', data-parent='#accordion1', href='#collapseThree')
+											i.fa.fa-sort-desc
+											|	고마운컴퍼니의 비전
+								#collapseThree.panel-collapse.collapse
+									.panel-body
+										| 한국을 넘어 전세계의 고마운기업 큐레이션 서비스를 제공하여 End to End 서비스를 지원하는 플랫폼이 될 것입니다.
+							.panel
+								.panel-heading
+									h2(style="font-size: 22px;").panel-title
+										a(data-toggle='collapse', data-parent='#accordion1', href='#collapseFour')
+											i.fa.fa-sort-desc
+											|	고마운컴퍼니의 핵심가치
+								#collapseFour.panel-collapse.collapse
+									.panel-body
+										blockquote
+											p 진실성 + 품질 + 큐레이션
+										p 진심을 담아 만든 사회적 가치에 부합하는 상품을 판매하고, 감성에 의존한 판매가 아닌 품질도 좋은 상품을 판매하며, 지속적으로 고마운 기업들을 발굴하여 소개합니다.
 
 
 	
@@ -67,17 +109,35 @@ block content
 						h3 고마운가게
 
 						p 판로의 한계를 지녔던 상품들을 고마운가게를 통해 판매할 수 있습니다. 상품 판매 이후 목표한 타겟에 도달할 수 있도록 퍼포먼스 마케팅을 지원합니다. 퍼포먼스 마케팅을 통해 기업이 더욱 성장할 수 있도록 도와드립니다.
-					
-
 
 	section#works
 		.container
 			.container
-				.row.text-center
-					h1.margin-top-large Works
+				.row.text-center.margin-top-large.margin-bottom-large
+					h1 Works
 					p 고마운컴퍼니는 이렇게 일하고 있습니다.
-				.row
+
+				.row.text-center
+					.col-xs-4.col-md-2.col-md-offset-3
+						i.fa.fa-share-alt.fa-5x
+						h3 알리다
+						p 고마운기업의 인터뷰컨텐츠를 고마운사람들이 되어 알립니다.
+					.col-xs-4.col-md-2
+						i.fa.fa-life-ring.fa-5x
+						h3 돕다
+						p 고마운가게에서 고마운기업의 상품을 판매합니다.
+					.col-xs-4.col-md-2
+						i.fa.fa-cogs.fa-5x
+						h3 함께하다
+						p 고마운컴퍼니와 고마운기업이 함께 캠페인을 진행합니다.
+				.row.text-center
+					.col-md-12.text-center
+						i.fa.fa-chevron-down.fa-5x
+						h3 전세계 고마운기업들의 지속성장을 도움
+
+				.row.margin-top-large
 					.col-md-12
+						h1.text-center Timeline
 						.timeline
 							dl
 								dt Oct 2016
@@ -108,11 +168,17 @@ block content
 														| 아주 작은 생각에서 출발한 고마운컴퍼니는 첫 발을 내딛었습니다. 생각에 그치지 않고 실제 행동에 옮겨 고마운컴퍼니가 고마운사람들과 함께 할 수 있는 플랫폼을 만들기 위해 노력하고 있습니다.
 			.container.text-center
 				.row.margin-top-large
-					h1 Clients
-					p 고마운컴퍼니와 함께하는 고마운기업들을 소개합니다.
+					h1#clients Clients
+					p 함께하는 고마운기업들을 소개합니다.
 				.row.margin-bottom-large
 					.col-xs-12
-						h1 고마운컴퍼니는 여러분을 기다리고 있습니다.
+						h3 고마운컴퍼니는 여러분을 기다리고 있습니다.
+				//
+					.row.margin-bottom-large
+						h3.text-center Newsletter
+						form
+							input.form-control(type='text', placeholder='id@example.com', name='EMAIL')
+							button.btn.btn-primary.btn-block(type='button', name='submit') 구독하기
 
 	//
 		section#news

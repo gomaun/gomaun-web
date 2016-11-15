@@ -1809,7 +1809,7 @@ navbar-custom
     left: 0;
     border: none;
     border-radius: 0;
-    background-color: rgba(255, 253, 154, .9);
+    background-color: rgba(240,240,240, .9);
     width: 100%;
     z-index: 2000;
     margin-bottom: 0 !important;
