@@ -2,8 +2,8 @@ var express = require('express');
 var app = express();
 
 //routers
-var teaserRouter = require("./routes/teaser")(app);
 var postRouter = require("./routes/post")(app);
+var aboutRouter = require("./routes/about")(app);
 
 //packages
 var pug = require('pug');

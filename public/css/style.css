@@ -2,9 +2,48 @@
  * teaser page options
  */
 
-/*
- * jumbotron teaser hero
-*/
+body {
+  font-family: 'Open Sans','NanumSquare',Helvetica Neue, Arial, sans-serif;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  font-family: 'Teko','Open Sans','NanumSquare',Helvetica Neue, Arial, sans-serif;
+}
+
+.docs-header {
+  padding-top: 100px;
+  background: linear-gradient(rgba(57,100,195,.3), rgba(57,100,195,.3)), url('/public/img/hero-cd2.jpg'); 
+  position: relative; 
+  width: 100%; 
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover; 
+  background-position: 50% 30%;
+  color: #eeeeee;
+}
+
+@media screen and (max-width: 768px){
+  .docs-header {
+    padding-top: 0;
+  }
+  .hero-caption {
+    font-size: 17px;
+  }
+}
+
+.docs-header-60 {
+  height: 60vh;
+}
+
+.topic {
+  position: relative;
+  padding: 120px 0 110px;
+}
 
 .jumbotron-hero {
 	position: relative; 
@@ -34,18 +73,6 @@
   background-position: 45% 50%;
 }
 
-.bgBlur:before {
-  content: '';
-  position: absolute;
-  top: 0; left:0; right:0; bottom:0;
-  background: inherit;
-  z-index:-1;
-  filter: blur(6px); 
-  -webkit-filter: blur(6px); 
-  -moz-filter: blur(6px);
-  -o-filter: blur(6px);
-  filter:url(#blur);
-}
 
 /*
  * margin option
@@ -155,10 +182,25 @@
   z-index: 0;
 }
 
+.blockquote {
+  font-size: 18px;
+}
+
 .blockquote-reverse {
+  font-size: 18px;
   border-right: 3px solid #ccd1d9;
 }
 
 .footer-address {
   color: #aab2bd;
+}
+
+/*
+ *
+ */
+
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: #434a54;
 }
