@@ -70,7 +70,9 @@ $(function() {
   stickyHeaders.load($(".followMeBar"));
 });
 
-//Smooth scroll
+/*
+ * Smooth scroll
+ */
 
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -95,4 +97,17 @@ $(document).ready(function(){
       });
     } // End if
   });
+});
+
+/*
+ * Transparent navbar
+*/
+
+$(window).scroll(function() {
+  if($(this).scrollTop() > 50)  /*height in pixels when the navbar becomes non opaque*/ 
+  {
+      $('.navbar-custom').addClass('fixed');
+  } else {
+      $('.navbar-custom').removeClass('fixed');
+  }
 });

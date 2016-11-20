@@ -1,5 +1,5 @@
 header
-	nav.navbar.navbar-default.navbar-custom(role='navigation')
+	nav.navbar.navbar-default.navbar-custom.navbar-custom-fixed(role='navigation')
 		.container
 			.navbar-header
 				button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
@@ -10,13 +10,15 @@ header
 				a.navbar-brand(href='/')
 					img(src='/public/img/footer-logo.png', height='40')
 			.collapse.navbar-collapse
-				ul.nav.navbar-nav.navbar-right
+				ul.nav.navbar-nav.navbar-right(style="font-size: 17px; font-family: 'Teko', Helvetica Neue, Arial;")
 					li.collapse.navbar-collapse
-						a.nav-link(href='#whatwedo') What We Do
+						a.nav-link(href='#whereweregoing') Where We're Going
 					li.collapse.navbar-collapse
 						a.nav-link(href='#whywerehere') Why We're Here
 					li.collapse.navbar-collapse
-						a.nav-link(href='#services') Services
+						a.nav-link(href='#whatweprovide') What We Provide
+					li.collapse.navbar-collapse
+						a.nav-link(href='#whatwedo') What We Do	
 					li.dropdown.collapse.navbar-collapse
 						a.dropdown-toggle(href='#', data-toggle='dropdown')
 							| Contact 
