@@ -107,7 +107,10 @@ $(window).scroll(function() {
   if($(this).scrollTop() > 50)  /*height in pixels when the navbar becomes non opaque*/ 
   {
       $('.navbar-custom').addClass('fixed');
+      $('.navbar-brand img').css({'height':'40px'}).attr('src', '/public/img/logo_dark.png');
   } else {
       $('.navbar-custom').removeClass('fixed');
+      $('.navbar-brand img').css({'height':'40px'}).attr('src', '/public/img/logo_light.png');
+
   }
 });
