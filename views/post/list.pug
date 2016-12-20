@@ -1,19 +1,26 @@
 extends ../layout
 
 block content
-	.jumbotron.bgBlur
-		.jumbotron-photo.jumbotron-hero-semi
+	.docs-header.docs-header-list
+		.topic
 			.container
-				.row
-					.col-md-12.col-md-offset-1
-						h1(style="font-size: 56px; font-weight:600; color: #ffffff; margin-top: 10vh;") 고마운사람들
+				.col-md-4.col-md-offset-4.text-center
+					h1(style='font-weight:600;') 
+						|	고마운 사람들
 
 	section#list
 		.container.margin-bottom-large
 			.row
-				h2.text-center list
-				ul
-					li 
-						a(href='/post/sample') 고마운기업1
-					li 고마운기업2
-
+				h2.text-center Post list
+			.row
+				.col-md-6
+					a(href='/post/introduce-gomaun')
+						img.img-rounded(src='//placehold.it/640x480' width='100%')
+						.caption.text-center
+							h4 고마운컴퍼니를 소개합니다.
+							
+				.col-md-6
+					a(href='/post/introduce-hanbit')
+						img.img-rounded(src='//placehold.it/640x480' width='100%')
+						.caption.text-center
+							h4 한빛ngo를 소개합니다.

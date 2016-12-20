@@ -142,9 +142,12 @@ h6 {
   color: #eeeeee;
 }
 
+
 @media screen and (max-width: 767px){
-  .docs-header {
-    padding-top: 0;
+  .docs-header, 
+  .docs-header-list, 
+  .docs-header-detail {
+    padding-top: 0!important;
   }
   .hero-caption {
     font-size: 23px;
@@ -153,6 +156,19 @@ h6 {
 
 .docs-header-75 {
   height: 75vh;
+}
+
+.docs-header-list {
+  height: 46.3vh;
+}
+
+.docs-header-detail {
+  padding-top: 25px;
+  height: 28.6vh;
+}
+
+.docs-header-detail > .topic {
+  padding: 30px 0 110px;
 }
 
 .topic {
@@ -192,13 +208,20 @@ h6 {
 /*
  * margin option
 */
+.margin-top {
+  margin-top: 40px;
+}
+
+.margin-bottom {
+  margin-bottom: 40px;
+}
 
 .margin-top-large {
-	margin-top: 80px ;
+	margin-top: 80px;
 }
 
 .margin-bottom-large {
-	margin-bottom: 60px ;
+	margin-bottom: 80px;
 }
 
 /*
@@ -312,11 +335,29 @@ h6 {
 }
 
 /*
- *
+ *  navbar background
  */
 
 .navbar-default .navbar-nav > .open > a, 
 .navbar-default .navbar-nav > .open > a:hover, 
 .navbar-default .navbar-nav > .open > a:focus {
   background-color: #434a54;
+}
+
+/*
+ *  post related options
+ */
+
+.post-image {
+  width: 100%;
+  color: #fff;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.article-header {
+
+}
+.article-meta {
+  color: #888888;
 }
