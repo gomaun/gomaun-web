@@ -6,21 +6,24 @@ block content
 			.container
 				.col-md-4.col-md-offset-4.text-center
 					h1(style='font-weight:400;') 
-						|	고마운 사람들
+						|	고마운사람들
 
 	section#list
 		.container.margin-bottom-large
 			.row
-				h2.text-center Post list
+				h3.text-center 고마운컴퍼니가 만난 고마운사람들입니다
+
 			.row
-				.col-md-6
+				.col-md-3.col-md-offset-3
 					a(href='/post/introduce-gomaun')
-						img.img-rounded(src='/public/img/img_together.jpg' width='100%')
-						.caption.text-center
-							h4 고마운컴퍼니를 소개합니다.
-				//			
-					.col-md-6
-						a(href='/post/introduce-hanbit')
-							img.img-rounded(src='//placehold.it/640x480' width='100%')
+						.thumbnail
+							img.img-rounded.list-img-thumbnail(src='/public/img/img_thank.jpg')
 							.caption.text-center
-								h4 한빛ngo를 소개합니다.
+								h5 고마운컴퍼니를 소개합니다.
+
+				.col-md-3
+					a(href='/post/introduce-hanbit')
+						.thumbnail
+							img.img-rounded.list-img-thumbnail(src='/public/img/hanbit/hanbit-main.jpg')
+							.caption.text-center
+								h5 소아암환우들의 쉼터, 소아암NGO한빛

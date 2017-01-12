@@ -361,3 +361,29 @@ h6 {
 .article-meta {
   color: #888888;
 }
+
+article > p {
+  line-height: 1.7em;
+  font-size: 1.3em;
+}
+
+.article-text {
+  line-height: 1.7em;
+  font-size: 1.3em;
+}
+
+.article-slide-img {
+  overflow: hidden;
+  height: auto;
+  vertical-align: middle;
+  position: relative;
+}
+
+.list-img-thumbnail {
+  overflow: hidden;
+  max-height: 140px;
+  max-width: 200px;
+  height: auto;
+  vertical-align: middle;
+  position: relative;
+}
