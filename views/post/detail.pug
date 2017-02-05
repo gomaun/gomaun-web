@@ -11,7 +11,10 @@ block content
 
 	.container.margin-bottom-large.followZindex
 		.row
-			.col-lg-4.col-lg-push-8.visible-lg.margin-top
+			section#article
+				block content
+
+			.col-lg-4.visible-lg.margin-top
 				h3 Recent Post
 				ul
 					li 
@@ -23,7 +26,3 @@ block content
 					blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/321406731562427/')
 						a(href='https://www.facebook.com/321406731562427/')
 						| 고마운컴퍼니
-
-				
-			section#article
-				block content
