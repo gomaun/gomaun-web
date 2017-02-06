@@ -7,3 +7,6 @@
 - nodejs, express
 - pug
 - nodemon
+
+## Version info
+v1.1.6
