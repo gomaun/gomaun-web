@@ -399,3 +399,15 @@ article > p {
     width: 100%;
   }
 }
+
+.justify-hangul > p {
+  text-align:justify;
+  word-break:keep-all;
+  text-indent: 1em;
+}
+
+.justify-hangul > li > p {
+  text-align:justify;
+  word-break:keep-all;
+  text-indent: 1em;
+}
