@@ -401,13 +401,11 @@ article > p {
 }
 
 .justify-hangul > p {
-  text-align:justify;
-  word-break:keep-all;
+  text-align: justify;
   text-indent: 1em;
 }
 
 .justify-hangul > li > p {
-  text-align:justify;
-  word-break:keep-all;
+  text-align: justify;
   text-indent: 1em;
 }
